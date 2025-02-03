@@ -16,13 +16,16 @@
 - plaćanje
 - preciznost
 - potreban pristup internetu
+	- GPT-4o
+	- GPT-4o mini
 
 4. OLLAMA (model provider):
 - lokalna instalacija modela
 - plaćanje
-	4.1. dorian2b/vera
+	- dorian2b/vera
 
 HUGGING FACE (API (besplatni plan) ili preuzimanje lokalno (dovoljno RAM-a)): 
+
 5. google/flan-t5-base 
 - free
 - ne preporuča se koristiti u aplikaciji bez provjere sigurnosti
