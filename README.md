@@ -1,4 +1,4 @@
-# praksa
+# Praksa
 
 1. Google translate
 - free
