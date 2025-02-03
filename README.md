@@ -1,0 +1,2 @@
+# praksa
+istraživanje LLM-ova
