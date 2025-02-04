@@ -12,3 +12,5 @@ resorce datoteke?
 haiku podržava hr!!!
 
 flan t5 base - finetuniran za primanje uputa i "praćenje tijeka misli"
+
+nllb - maknut službeno
