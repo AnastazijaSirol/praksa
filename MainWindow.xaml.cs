@@ -259,12 +259,12 @@ namespace demo
                     XmlNode? nameNode = dataNode.Attributes?["name"];
                     if (nameNode != null && nameNode.Value != null)
                     {
-                        if (nameNode != null && nameNode.Value.Equals(resourceKey))
+                        if (nameNode.Value.Equals(resourceKey))
                         {
                             XmlNode? valueNode = dataNode.SelectSingleNode("value");
                             if (valueNode != null)
                             {
-                                return valueNode.InnerText;
+                                return valueNode.InnerText ?? string.Empty;
                             }
                         }
                     }
