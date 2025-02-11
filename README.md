@@ -1,6 +1,7 @@
 # Praksa
 
-private string? GetTranslationFromResx(string originalText, string languageCode)
+```
+private string GetTranslationFromResx(string originalText, string languageCode)
 {
     string resourceFilePath = $@"C:\Users\anastazijas\source\repos\demo\Properties\Strings_{languageCode}.resx";
     string sourceFilePath = @"C:\Users\anastazijas\source\repos\demo\Properties\Strings.resx";
@@ -71,6 +72,7 @@ private string? GetTranslationFromResx(string originalText, string languageCode)
 
     return string.Empty;
 }
+```
 
 microsoft tehnologija
 
