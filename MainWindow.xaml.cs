@@ -16,21 +16,16 @@ using System.Diagnostics;
 using System.IO;
 using System.Resources;
 using System.Xml;
-using demo.Properties;
-using demo;
 
 namespace demo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    ///
-    
     public partial class MainWindow : Window
     {
         bool running = false;
         string currentLanguage = "hr";
-
         string svedobro = Properties.Strings.sveDobro;
         string svenedobro = Properties.Strings.sveNeDobro;
         string zaustavljeno = Properties.Strings.zaustavljeno;
@@ -49,6 +44,19 @@ namespace demo
 
         private void SetTextFromResources()
         {
+            appName.Content = Properties.Strings.AppName;
+            dobro.Content = Properties.Strings.Dobro;
+            lose.Content = Properties.Strings.Lose;
+            btn_ispis.Content = Properties.Strings.bt_ispis;
+            promjena.Content = Properties.Strings.bt_promjena;
+            tekst_promjena.Text = Properties.Strings.tekst_promjena;
+            btn_posalji.Content = Properties.Strings.bt_posalji;
+            lista1.Content = Properties.Strings.lista1;
+            lista2.Content = Properties.Strings.lista2;
+            lista3.Content = Properties.Strings.lista3;
+            lista4.Content = Properties.Strings.lista4;
+            lista5.Content = Properties.Strings.lista5;
+            btn_jezik.Content = Properties.Strings.jezik;
             svedobro = Properties.Strings.sveDobro;
             svenedobro = Properties.Strings.sveNeDobro;
             zaustavljeno = Properties.Strings.zaustavljeno;
@@ -404,7 +412,7 @@ namespace demo
             if (btn_jezik.Content.ToString() == "Engleski")
             {
                 targetLanguage = "en";
-                btn_jezik.Content = "Craoatian";
+                btn_jezik.Content = "Croatian";
 
                 Translate(targetLanguage);
                 
