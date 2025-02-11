@@ -264,7 +264,12 @@ namespace demo
                             XmlNode? valueNode = dataNode.SelectSingleNode("value");
                             if (valueNode != null)
                             {
-                                return valueNode.InnerText ?? string.Empty;
+                                string translatedValue = valueNode.InnerText ?? string.Empty;
+                                if (translatedValue.Equals(originalValue))
+                                {
+                                    return null;
+                                }
+                                return translatedValue;
                             }
                         }
                     }
