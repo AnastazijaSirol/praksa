@@ -265,9 +265,9 @@ namespace demo
                             if (valueNode != null)
                             {
                                 string translatedValue = valueNode.InnerText ?? string.Empty;
-                                if (translatedValue.Equals(originalValue))
+                                if (translatedValue.Equals(originalText))
                                 {
-                                    return null;
+                                    return string.Empty;
                                 }
                                 return translatedValue;
                             }
