@@ -1,6 +1,6 @@
 # Praksa
 
-3.2.: INFORMACIJE ZA APP: microsoft tehnologija, .net 4.8 framework, wpf, 10-20 labela?, resorce datoteke?
+3.2.: DOBIVENE INFORMACIJE ZA APP: microsoft tehnologija, .net 4.8 framework, wpf, 10-20 labela?, resorce datoteke?
 
 13.2.: RIVALA SAN ALI VJV ĆE SE NAJ NEŠTO ČA NI DORBO! :|
 
