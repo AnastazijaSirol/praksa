@@ -70,7 +70,7 @@ namespace test
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show(Properties.Resources.nastavak, "Pristanak", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult result = MessageBox.Show(Properties.Resources.nastavak, " ", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (result == MessageBoxResult.Yes)
             {
