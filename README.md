@@ -8,18 +8,28 @@ OPIS PREVOĐENJA:
 
 TranslateResources:
 
-1. Učitava resursnu datoteku Resources.resx i Resources.en.resx 
+1. Učitava resursnu datoteku Resources.resx (osnovna) i Resources.en.resx (prevedena)
 
-2. Provjerava svaku stavku (data element) unutar resursa
+2. Ako prevedena ne postoji, stvara je s osnovnim elementima
 
-3. Ako se određeni tekst još nije preveo, poziva metodu TranslateText() da prevede taj tekst
+3. Prolazi kroz svaku stavku (data element) unutar osnovne datoteke te sprema name i value od svake
 
-4. Pohranjuje prevedene vrijednosti natrag u Resources.en.resx
+4. Provjerava postoji li taj element u prevedenoj datoteci
+
+5. Ako postoji (uz provjeru da je value različit od originala) prekače se naredba linija koda
+
+6. Ako ne postoji poziva se TranslateText za value tog određenog elementa
+
+7. Proverava li se postoji li u prevedenoj datoteci element s tim name-on: ako da onda se samo upisuje value za njega a ako ne onda se stvara novi elemnt s tim name-on i prevedenin value-on
+
+8. Kada se to izvrši za sve elemente, upisuje se u prevedenu datoteku
 
 TranslateText:
 
-1. Pokreće Python skriptu pomoću Process.Start()
+1. Definira se putanja fo python izvršne datoteke i do python skripte za prevođenje
 
-2. Predaje joj ulazni tekst i jezike za prijevod
+2. Definiraju se argumenti koji se proslijeđuju python skripti
 
-3. Vraća prevedeni tekst ili prikazuje grešku ako nešto pođe po zlu
+3. Definira se proces i pokreće
+
+4. Nakon što se proces završi, ako nema grešaka ispisuje se rezultat te opkrenute skripte
