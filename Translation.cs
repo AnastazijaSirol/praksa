@@ -19,6 +19,27 @@ namespace test
 
             XElement resources = XElement.Load(resourcesFilePath);
 
+            if (!File.Exists(translatedFilePath))
+            {
+                using (FileStream fs = File.Create(translatedFilePath)) { }
+
+                XDocument emptyResx = new XDocument(
+                    new XDeclaration("1.0", "utf-8", "yes"),
+                    new XElement("root",
+                        new XElement("resheader", new XAttribute("name", "resmimetype"),
+                            new XElement("value", "text/microsoft-resx")),
+                        new XElement("resheader", new XAttribute("name", "version"),
+                            new XElement("value", "2.0")),
+                        new XElement("resheader", new XAttribute("name", "reader"),
+                            new XElement("value", "System.Resources.ResXResourceReader, System.Windows.Forms")),
+                        new XElement("resheader", new XAttribute("name", "writer"),
+                            new XElement("value", "System.Resources.ResXResourceWriter, System.Windows.Forms"))
+                    )
+                );
+
+                emptyResx.Save(translatedFilePath);  
+            }
+
             XElement translatedResources = XElement.Load(translatedFilePath);
 
             foreach (var data in resources.Descendants("data"))
