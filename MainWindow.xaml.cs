@@ -37,7 +37,7 @@ namespace test
         public MainWindow()
         {
             InitializeComponent();
-            translation= new Translation(); 
+            translation = new Translation();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -93,16 +93,21 @@ namespace test
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo("hr-HR");
             }
-            RefreshUI();
+            Refresh();
         }
 
-        private void RefreshUI()
+        private void Refresh()
         {
             var currentWindow = Application.Current.MainWindow;
 
             if (currentWindow != null)
             {
                 MainWindow newWindow = new MainWindow();
+                newWindow.Left = currentWindow.Left;
+                newWindow.Top = currentWindow.Top;
+                newWindow.Width = currentWindow.Width;
+                newWindow.Height = currentWindow.Height;
+                newWindow.WindowState = currentWindow.WindowState;
 
                 currentWindow.Close();
 
