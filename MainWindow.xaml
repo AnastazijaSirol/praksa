@@ -24,6 +24,7 @@
             <ListViewItem x:Name="lista5" Content="{x:Static p:Resources.lista5}"></ListViewItem>
         </ListView>
         <Canvas Margin="0,0,0,-204">
+            <ProgressBar x:Name="LoadingSpinner" IsIndeterminate="True" Visibility="Hidden" Height="20" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="576,60,0,0"/>
             <Button x:Name="btn_jezik" Content="{x:Static p:Resources.jezik}" HorizontalAlignment="Left" Canvas.Left="710" Canvas.Top="13" Width="66" Height="34" Click="Button_Click_2"/>
         </Canvas>
     </Grid>
