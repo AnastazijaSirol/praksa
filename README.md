@@ -18,15 +18,15 @@ TranslateResources()
 
 - učitava se file sa izvornim tekstovima 
 
-- ako prevedni file ne postoji, stvara se novi s osnovnim elemntima i sprema na deifniranu putanju
+- ako prevedni file ne postoji, stvara se novi s osnovnim elementima i sprema na definiranu putanju
 
 - učitava se file sa prevednim tesktovima
 
 - traže se resursi koji nisu prevedeni (nalaze se u izvornom file-u, ali ne i u prevednom)
 
-- ako ne postoje takvi resursi funkcija se prekida, a ako postoje oni se spremaju u file na definiranoj putanji
+- ako ne postoje takvi resursi funkcija se prekida, a ako postoje oni se spremaju u file još neprevedenih tekstova na definiranoj putanji
 
-- poziva se funkcija koja prevodi sadržaj u file-u sa neprevedenim resursima
+- poziva se funkcija koja prevodi sadržaj u file-u s neprevedenim resursima
 
 - prolazi se kroz prevedeni file i dodaju se oni resursi koji ne postoje u njemu a nalaze se u još neprevedenom file-u
 
@@ -34,9 +34,11 @@ TranslateResources()
 
 TranslateText()
 
-- učitavaju se: python izvršna datoteka i python skriptu za prevođenje 
+- učitavaju se: python izvršna datoteka i python skripta za prevođenje 
 
 - pokreće se python skipta
 
 - čita se rezultat koji vraća python skripta nakon što se izvrši
 
+*koristi se model: facebook/m2m100_1.2B sa HuggingFace-a*
+*model se vrti lokalno*
