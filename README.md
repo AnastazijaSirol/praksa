@@ -8,4 +8,4 @@ MISLIN DA JE TO TO ČA SE TIČE APLIKACIJE!
 
 - sada triba provuć njihov file kroz to
 
-- umjesto da se šalje tekst po tekst sada se šačje cijeli file na prijevod za je brže
+- umjesto da se šalje tekst po tekst sada se šalje cijeli file na prijevod za je brže
