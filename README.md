@@ -41,4 +41,5 @@ TranslateText()
 - čita se rezultat koji vraća python skripta nakon što se izvrši
 
 *koristi se model: facebook/m2m100_1.2B sa HuggingFace-a*
+
 *model se vrti lokalno*
