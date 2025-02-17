@@ -16,6 +16,7 @@ namespace test
         {
             string resourcesFilePath = @"C:\Users\anastazijas\source\repos\test\Properties\Resources.resx";
             string translatedFilePath = @"C:\Users\anastazijas\source\repos\test\Properties\Resources.en.resx";
+            string untranslatedFilePath = @"C:\Users\anastazijas\source\repos\test\Properties\Untranslated.resx";
 
             XElement resources = XElement.Load(resourcesFilePath);
 
@@ -42,96 +43,98 @@ namespace test
 
             XElement translatedResources = XElement.Load(translatedFilePath);
 
-            foreach (var data in resources.Descendants("data"))
+            XElement untranslatedResources = new XElement("root",
+            resources.Descendants("data")
+                .Where(data =>
+                    !translatedResources.Descendants("data").Any(d =>
+                        d.Attribute("name")?.Value == data.Attribute("name")?.Value))
+                .Select(data => new XElement("data",
+                    new XAttribute("name", data.Attribute("name")?.Value),
+                    new XElement("value", data.Element("value")?.Value)
+                ))
+            );
+
+            if (!untranslatedResources.Elements("data").Any())
             {
-                string name = data.Attribute("name").Value;
-                string value = data.Element("value")?.Value;
+                return;
+            }
 
-                if (!string.IsNullOrEmpty(value))
+            untranslatedResources.Save(untranslatedFilePath);
+
+            string translatedXml = "";
+
+            try
+            {
+                translatedXml = TranslateText(untranslatedFilePath, "hr", "en");
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.ToString());
+            }
+
+            if (string.IsNullOrEmpty(translatedXml))
+            {
+                Console.WriteLine("Greška u prijevodu.");
+                return;
+            }
+
+            XElement translatedXElement = XElement.Parse(translatedXml);
+
+            foreach (var data in translatedXElement.Descendants("data"))
+            {
+                string name = data.Attribute("name")?.Value;
+                string translatedValue = data.Element("value")?.Value;
+
+                var existingEntry = translatedResources.Descendants("data")
+                    .FirstOrDefault(d => d.Attribute("name")?.Value == name);
+
+                if (existingEntry == null)
                 {
-                    var translatedData = translatedResources.Descendants("data")
-                        .FirstOrDefault(d => d.Attribute("name")?.Value == name);
-
-                    if (translatedData != null)
-                    {
-                        string translated = translatedData.Element("value")?.Value;
-
-                        if (translated != value)
-                        {
-                            continue;
-                        }
-                    }
-
-                    string translatedValue = TranslateText(value, "hr", "en");
-
-                    var existingTranslatedData = translatedResources.Descendants("data")
-                        .FirstOrDefault(d => d.Attribute("name")?.Value == name);
-
-                    if (existingTranslatedData != null)
-                    {
-                        existingTranslatedData.Element("value").Value = translatedValue;
-                    }
-                    else
-                    {
-                        translatedResources.Add(new XElement("data",
-                            new XAttribute("name", name),
-                            new XElement("value", translatedValue)
-                        ));
-                    }
+                    translatedResources.Add(new XElement("data",
+                        new XAttribute("name", name),
+                        new XElement("value", translatedValue)
+                    ));
                 }
             }
 
             translatedResources.Save(translatedFilePath);
         }
 
-        public string TranslateText(string inputText, string srcLang, string targetLang)
+        public string TranslateText(string filePath, string srcLang, string targetLang)
         {
             try
             {
                 string pythonExePath = @"C:\ProgramData\anaconda3\python.exe";
                 string pythonScriptPath = @"C:\Users\anastazijas\Desktop\translate.py";
 
-                string arguments = $"\"{pythonScriptPath}\" \"{inputText}\" {srcLang} {targetLang}";
-
                 ProcessStartInfo startInfo = new ProcessStartInfo
                 {
                     FileName = pythonExePath,
-                    Arguments = arguments,
+                    Arguments = $"\"{pythonScriptPath}\" \"{filePath}\" {srcLang} {targetLang}",
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
                     UseShellExecute = false,
                     CreateNoWindow = true
                 };
 
-                Process process = Process.Start(startInfo);
-
-                if (process == null)
+                using (Process process = Process.Start(startInfo))
                 {
-                    return "Error: Process could not be started.";
-                }
+                    if (process == null) return null;
 
-                using (process)
-                using (StreamReader outputReader = process.StandardOutput)
-                using (StreamReader errorReader = process.StandardError)
-                {
-                    string result = outputReader.ReadToEnd();
-                    string error = errorReader.ReadToEnd();
-
-                    process.WaitForExit();
-
-                    if (!string.IsNullOrEmpty(error))
+                    using (StreamReader outputReader = process.StandardOutput)
                     {
-                        return $"Error from Python script: {error}";
+                        string result = outputReader.ReadToEnd();
+                        process.WaitForExit();
+                        return result.Trim();
                     }
-
-                    return result.Trim();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error translating: {ex.Message}");
-                return ex.Message;
+                Console.WriteLine($"Greška pri pozivanju prijevoda: {ex.Message}");
+                return null;
             }
         }
     }
 }
+
