@@ -82,18 +82,39 @@ namespace test
             }
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private async void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (btn_jezik.Content.ToString() == "Engleski")
+            try
             {
-                translation.TranslateResources();
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                LoadingSpinner.Visibility = Visibility.Visible; 
+
+                if (btn_jezik.Content.ToString() == "Engleski")
+                {
+                    await Task.Run(() => translation.TranslateResources()); 
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                }
+                else
+                {
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("hr-HR");
+                }
+
+                ReloadResources();
             }
-            else
+            catch (Exception ex)
             {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("hr-HR");
+                MessageBox.Show("Greška pri prevođenju: " + ex.Message);
             }
-            Refresh();
+            finally
+            {
+                LoadingSpinner.Visibility = Visibility.Hidden; 
+            }
+
+            Refresh(); 
+        }
+
+        private void ReloadResources()
+        {
+            Properties.Resources.Culture = Thread.CurrentThread.CurrentUICulture;
         }
 
         private void Refresh()
