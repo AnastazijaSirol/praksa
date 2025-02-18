@@ -5,12 +5,23 @@ import xml.etree.ElementTree as ET
 model = M2M100ForConditionalGeneration.from_pretrained("facebook/m2m100_1.2B")
 tokenizer = M2M100Tokenizer.from_pretrained("facebook/m2m100_1.2B")
 
-def translate_text(input_text, src_lang, target_lang):
+'''def translate_text(input_text, src_lang, target_lang):
     tokenizer.src_lang = src_lang
     encoded = tokenizer(input_text, return_tensors="pt")
     generated_tokens = model.generate(**encoded, forced_bos_token_id=tokenizer.get_lang_id(target_lang))
     translated = tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
-    return translated[0]
+    return translated[0]'''
+
+def translate_text(input_text, src_lang, target_lang):
+    context = "In the context of the hospital care and medical examination: "
+    input_text_with_context = context + input_text
+    tokenizer.src_lang = src_lang
+    encoded = tokenizer(input_text_with_context, return_tensors="pt")
+    generated_tokens = model.generate(**encoded, forced_bos_token_id=tokenizer.get_lang_id(target_lang))
+    translated = tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
+    translated_text = translated[0].replace(context, "")
+    print(translated_text)
+    return translated_text
 
 def translate_resx(file_path, src_lang, target_lang):
     tree = ET.parse(file_path)
