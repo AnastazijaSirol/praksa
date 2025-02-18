@@ -19,8 +19,8 @@ print(tokenizer.decode(outputs[0]))'''
 with open('input_text.txt', 'r') as file:
     input_text = file.read()
 
-model = M2M100ForConditionalGeneration.from_pretrained("facebook/m2m100_418M")
-tokenizer = M2M100Tokenizer.from_pretrained("facebook/m2m100_418M")
+model = M2M100ForConditionalGeneration.from_pretrained("facebook/m2m100_1.2B")
+tokenizer = M2M100Tokenizer.from_pretrained("facebook/m2m100_1.2B")
 
 tokenizer.src_lang = "hr"
 encoded_en = tokenizer(input_text, return_tensors="pt")
@@ -39,8 +39,8 @@ def chunk_text(text):
 with open('input_text.txt', 'r', encoding='utf-8') as file:
     input_text = file.read()
 
-model = M2M100ForConditionalGeneration.from_pretrained("facebook/m2m100_418M")
-tokenizer = M2M100Tokenizer.from_pretrained("facebook/m2m100_418M")
+model = M2M100ForConditionalGeneration.from_pretrained("facebook/m2m100_1.2B")
+tokenizer = M2M100Tokenizer.from_pretrained("facebook/m2m100_1.2B")
 
 tokenizer.src_lang = "hr"
 text_chunks = chunk_text(input_text)
