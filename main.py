@@ -1,5 +1,5 @@
 
-#OVO JE KRITIČNO! (Who is danas?????)
+# (Who is danas?????)
 '''from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-base")
