@@ -1,0 +1,1912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accident">
+    <value>Unwanted event</value>
+  </data>
+  <data name="BloodType">
+    <value>Blood group</value>
+  </data>
+  <data name="Height">
+    <value>Visina</value>
+  </data>
+  <data name="POD">
+    <value>Number of days after the operation</value>
+  </data>
+  <data name="VAS">
+    <value>VAS</value>
+  </data>
+  <data name="Weight">
+    <value>Weight</value>
+  </data>
+  <data name="WorkSpaceTabViewModel_CurrentDocument">
+    <value>Current document</value>
+  </data>
+  <data name="VitalSignViewModel_GetBMIAsync_ErrorLog">
+    <value>Error in initializing BMI</value>
+  </data>
+  <data name="VitalSignViewModel_GetBMIAsync_ErrorNotify">
+    <value>An error occurred when initializing the BMI:</value>
+  </data>
+  <data name="BMI">
+    <value>ITM (BMI)</value>
+  </data>
+  <data name="VitalSignViewModel_GetVASAsync_ErrorLog">
+    <value>Error when initializing VAS</value>
+  </data>
+  <data name="VitalSignViewModel_GetVASAsync_ErrorNotify">
+    <value>An error occurred when initializing VAS:</value>
+  </data>
+  <data name="VitalSignViewModel_GetVitalSignsAsync_ErrorLog">
+    <value>Error in initializing vital signs</value>
+  </data>
+  <data name="VitalSignViewModel_GetVitalSignsAsync_ErrorNotify">
+    <value>An error occurred when initiating vital signs:</value>
+  </data>
+  <data name="Temperature">
+    <value>Temperature</value>
+  </data>
+  <data name="TemperatureShort">
+    <value>TEMP.</value>
+  </data>
+  <data name="BloodPressure">
+    <value>TLAK</value>
+  </data>
+  <data name="HeartRate">
+    <value>PULS</value>
+  </data>
+  <data name="BloodGlucoseLevel">
+    <value>GUK</value>
+  </data>
+  <data name="VitalSigns">
+    <value>Vital signs</value>
+  </data>
+  <data name="GridControl_ColumnHeader_Name">
+    <value>Title</value>
+  </data>
+  <data name="GridControl_ColumnHeader_Status">
+    <value>Status</value>
+  </data>
+  <data name="WorkSpaceTabViewModelFactory_CreateForDayMedication_ErrorLog">
+    <value>Error in loading daily therapy</value>
+  </data>
+  <data name="Medication">
+    <value>Therapy</value>
+  </data>
+  <data name="WorkSpaceTabViewModelFactory_LoadHtml_ErrorLog">
+    <value>An error occurred:</value>
+  </data>
+  <data name="WorkSpaceTabViewModelFactory_LoadVanjskiNalaz_FileNotFound">
+    <value>In the context of hospital care and medical examination: It is not possible to find the file:</value>
+  </data>
+  <data name="WorkSpaceTabViewModelFactory_LoadMBO_FileNotFound">
+    <value>It is not possible to find the path of MBO finds</value>
+  </data>
+  <data name="WorkSpaceTabViewModelFactory_GetHtmlFromTransfuzija_DocumentNotFound">
+    <value>Data for transfusion findings cannot be found ID =</value>
+  </data>
+  <data name="ChartHelper_Series_HeartRate">
+    <value>Pulse</value>
+  </data>
+  <data name="ChartHelper_Series_BloodPressureSystolic">
+    <value>Tlak-S</value>
+  </data>
+  <data name="ChartHelper_Series_BloodPressureDiastolic">
+    <value>Tlak-D</value>
+  </data>
+  <data name="ChartHelper_Series_Temperature">
+    <value>Temperature</value>
+  </data>
+  <data name="ChartHelper_Series_BloodGlucoseLevel">
+    <value>GUK</value>
+  </data>
+  <data name="ChartHelper_Series_TemperaturePattern">
+    <value>In the context of hospital care and medical examination: {V}°C</value>
+  </data>
+  <data name="ChartHelper_Series_VAS">
+    <value>VAS</value>
+  </data>
+  <data name="ChartHelper_Series_BMI">
+    <value>In the context of hospital care and medical examination: BMI</value>
+  </data>
+  <data name="VisitType_InpatientShort">
+    <value>ML</value>
+  </data>
+  <data name="VisitType_OutpatientShort">
+    <value>SL</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Status_InternalTransfer">
+    <value>Status of dismissal cannot be an internal relocation</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Status_Mandatory">
+    <value>Status of dismissal is mandatory</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Diagnosis_Mandatory">
+    <value>Dispensary diagnosis is mandatory</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_InjuryDiagnosis_Mandatory">
+    <value>The cause of injury is mandatory</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Outcome_Mandatory">
+    <value>The outcome of dismissal is mandatory</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Date_Inconsistent">
+    <value>The date of dismissal must be after the date of the last transfer</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Diagnosis_3Chars">
+    <value>No removable diagnosis on three signs is allowed</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Outcome_Inconsistent">
+    <value>The outcome must correspond to the dismissal status</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_DeathDiagnosis_Mandatory">
+    <value>Cause of death is mandatory information</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Institution_Mandatory">
+    <value>Institution transfer is a mandatory information</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Status_Inconsistent">
+    <value>Status of dismissal must correspond to the outcome</value>
+  </data>
+  <data name="Warning">
+    <value>Warning</value>
+  </data>
+  <data name="DocumentListViewModel_Create_ErrorLog">
+    <value>An error occurred when creating the document:</value>
+  </data>
+  <data name="DocumentListViewModel_Select_ErrorLog">
+    <value>An error occurred when loading the document:</value>
+  </data>
+  <data name="Save_HasChanges">
+    <value>There are unprepared changes. Do you want to continue without saving?</value>
+  </data>
+  <data name="DocumentListViewModel_SelectFromArhiva">
+    <value>Selection of documentation</value>
+  </data>
+  <data name="DocumentListViewModel_SelectFromArhiva_ErrorLog">
+    <value>An error occurred when creating the document:</value>
+  </data>
+  <data name="Error">
+    <value>Error</value>
+  </data>
+  <data name="PatientFullSearchViewModel_GetData_ErrorLog">
+    <value>Error in search</value>
+  </data>
+  <data name="PatientFullSearchViewModel_GetData_ErrorNotify">
+    <value>An error occurred during the search:</value>
+  </data>
+  <data name="Allergy">
+    <value>Allergies</value>
+  </data>
+  <data name="Allergy_Medication">
+    <value>Medicines:</value>
+  </data>
+  <data name="Allergy_Other">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="CriticalDocument">
+    <value>Critical finding</value>
+  </data>
+  <data name="UnreadDocument">
+    <value>Unrequested document</value>
+  </data>
+  <data name="Decubitus">
+    <value>Decubitus</value>
+  </data>
+  <data name="IndipendenceAssessment">
+    <value>Assessment of independence</value>
+  </data>
+  <data name="NurseDiagnosis">
+    <value>Nursing diagnoses</value>
+  </data>
+  <data name="Orders">
+    <value>Instructions</value>
+  </data>
+  <data name="LabOrders">
+    <value>Laboratory instructions</value>
+  </data>
+  <data name="LabTests">
+    <value>In the context of hospital care and medical examination: Laboratory examinations</value>
+  </data>
+  <data name="WorkListViewModel_GetActiveNurseDiagnosesAsync_ErrorLog">
+    <value>Error in loading nursing diagnoses</value>
+  </data>
+  <data name="WorkListViewModel_GetActiveNurseDiagnosesAsync_ErrorNotify">
+    <value>An error occurred when loading nursing diagnoses:</value>
+  </data>
+  <data name="WorkListViewModel_GetMedicationsAsync_ErrorLog">
+    <value>Error in loading therapy</value>
+  </data>
+  <data name="WorkListViewModel_GetMedicationsAsync_ErrorNotify">
+    <value>An error occurred when loading the therapy:</value>
+  </data>
+  <data name="WorkListViewModel_GetOrdersAsync_ErrorLog">
+    <value>Error when loading orders</value>
+  </data>
+  <data name="WorkListViewModel_GetOrdersAsync_ErrorNotify">
+    <value>An error occurred when loading orders:</value>
+  </data>
+  <data name="WorkListViewModel_GetLabTestsAsync_ErrorLog">
+    <value>Error in loading laboratory samples</value>
+  </data>
+  <data name="WorkListViewModel_GetLabTestsAsync_ErrorNotify">
+    <value>An error occurred when loading laboratory samples:</value>
+  </data>
+  <data name="PatientMainView_Load_ErrorLog">
+    <value>Error in initializing the patient</value>
+  </data>
+  <data name="PatientMainView_Load_ErrorNotify">
+    <value>An error occurred when initializing the patient:</value>
+  </data>
+  <data name="PatientMainView_LoadDocumentArchiveAsync_Success">
+    <value>Archive initialized</value>
+  </data>
+  <data name="PatientMainView_LoadDocumentArchiveAsync_ErrorNotify">
+    <value>An error occurred when initializing the archive</value>
+  </data>
+  <data name="PatientMainView_LoadDocumentArchiveAsync_ErrorLog">
+    <value>Error in initializing the archive</value>
+  </data>
+  <data name="WorkSpaceView_HamburgerMenu_SelectedItemChanged_ErrorLog">
+    <value>An error occurred when loading the check</value>
+  </data>
+  <data name="Menu_Anamnesis">
+    <value>Anamnesi</value>
+  </data>
+  <data name="Menu_Archive">
+    <value>Archives</value>
+  </data>
+  <data name="Menu_BloodTransfusion">
+    <value>Transfusion</value>
+  </data>
+  <data name="Menu_Decursus">
+    <value>The course of disease</value>
+  </data>
+  <data name="Menu_Diagnosis">
+    <value>Diagnosis</value>
+  </data>
+  <data name="Menu_Diet">
+    <value>Nutrition</value>
+  </data>
+  <data name="Menu_Discharge">
+    <value>Dismissal</value>
+  </data>
+  <data name="Menu_DischargeLetter">
+    <value>Dismissal letter</value>
+  </data>
+  <data name="Menu_Finding">
+    <value>Results</value>
+  </data>
+  <data name="Menu_Medication">
+    <value>Therapy</value>
+  </data>
+  <data name="Menu_LabTests">
+    <value>Lab. examinations</value>
+  </data>
+  <data name="Menu_NurseDocumentation">
+    <value>Care</value>
+  </data>
+  <data name="Menu_Orders">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="Menu_OrdersInternal">
+    <value>Internal instructions</value>
+  </data>
+  <data name="Menu_Schedule">
+    <value>Reservations</value>
+  </data>
+  <data name="Menu_Timeline">
+    <value>The course of events</value>
+  </data>
+  <data name="Menu_UnreadDocuments">
+    <value>Unproven findings</value>
+  </data>
+  <data name="WorkSpaceView_WorkSpace">
+    <value>Working space</value>
+  </data>
+  <data name="WorkSpaceView_PresentationSpace">
+    <value>Presentation space</value>
+  </data>
+  <data name="DischargeView_ExpectedDate">
+    <value>Estimated date of dismissal:</value>
+  </data>
+  <data name="DischargeView_DischargeDate">
+    <value>Date of dismissal:</value>
+  </data>
+  <data name="DischargeView_Diagnosis">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="DischargeView_Status">
+    <value>In the context of hospital care and medical examination: Status of dismissal:</value>
+  </data>
+  <data name="DischargeView_DeathDiagnosis">
+    <value>Cause of death:</value>
+  </data>
+  <data name="DischargeView_InjuryDiagnosis">
+    <value>Cause of injury:</value>
+  </data>
+  <data name="DischargeView_DischargeToInstitution">
+    <value>In the context of hospital care and medical examination: Transfer to the institution:</value>
+  </data>
+  <data name="DischargeView_Institution">
+    <value>Collaborative institution</value>
+  </data>
+  <data name="DischargeView_Outcome">
+    <value>Result of dismissal:</value>
+  </data>
+  <data name="ArchiveView_Filter_LabDocument">
+    <value>Laboratory findings</value>
+  </data>
+  <data name="ArchiveView_Filter_CurrentVisit">
+    <value>Current admission</value>
+  </data>
+  <data name="ArchiveView_Filter_Deleted">
+    <value>Removed findings</value>
+  </data>
+  <data name="ArchiveView_GridHeader_Date">
+    <value>Date</value>
+  </data>
+  <data name="ArchiveView_GridHeader_Type">
+    <value>Tip</value>
+  </data>
+  <data name="ArchiveView_GridHeader_Name">
+    <value>Title</value>
+  </data>
+  <data name="ArchiveView_GridHeader_Location">
+    <value>Department</value>
+  </data>
+  <data name="ArchiveView_GridHeader_Doctor">
+    <value>Doctor</value>
+  </data>
+  <data name="ArchiveView_GridHeader_Show">
+    <value>Show</value>
+  </data>
+  <data name="TimeLineView_Filter_EventType">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="TimeLineView_Filter_PeriodFrom">
+    <value>Period of</value>
+  </data>
+  <data name="TimeLineView_Filter_PeriodTo">
+    <value>do</value>
+  </data>
+  <data name="DocumentListView_ExpanderHeader">
+    <value>Documents</value>
+  </data>
+  <data name="MenuItemChange_HasChanges">
+    <value>There are unprepared changes</value>
+  </data>
+  <data name="LabDocumentSelectView_Import">
+    <value>Enter laboratory findings</value>
+  </data>
+  <data name="LabDocumentSelectView_Last">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="LabDocumentSelectView_Select">
+    <value>Selected</value>
+  </data>
+  <data name="LabTestSelectView_Import">
+    <value>Enter the results of laboratory examinations</value>
+  </data>
+  <data name="LabTestSelectView_Group">
+    <value>Group by search groups</value>
+  </data>
+  <data name="LabTestsSelectViewModel_LabTest">
+    <value>Search</value>
+  </data>
+  <data name="LabDocumentSelectView_View">
+    <value>Display</value>
+  </data>
+  <data name="LabDocumentSelectView_View_Series">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="LabDocumentSelectView_View_Table">
+    <value>Table</value>
+  </data>
+  <data name="LabTestsSelectViewModel_LabTestGroup">
+    <value>Group of examinations</value>
+  </data>
+  <data name="LabTests_AbnormalityIndicator_Low">
+    <value>L</value>
+  </data>
+  <data name="LabTests_AbnormalityIndicator_High">
+    <value>H</value>
+  </data>
+  <data name="Lab">
+    <value>Laboratory</value>
+  </data>
+  <data name="DocumentImportView_Lab_Tests">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="DocumentImportView_Lab_Docs">
+    <value>Results</value>
+  </data>
+  <data name="DischargeViewModel_CheckDischarge_Error">
+    <value>Error in checking the dismissal data:</value>
+  </data>
+  <data name="DischargeViewModel_CheckDischarge_CostItemsQuestion">
+    <value>There are staces with a date greater than the date of dismissal. Do you want to correct the dates of staces?</value>
+  </data>
+  <data name="DischargeViewModel_CheckDiet_Warning_Diet">
+    <value>It is not possible to make a discharge if the diet is not cancelled!</value>
+  </data>
+  <data name="DischargeViewModel_CheckDiet_Warning_Meal">
+    <value>It is not possible to make a discharge if the meals are not selected!</value>
+  </data>
+  <data name="DischargeView_TitleDeathDiagnosis">
+    <value>Cause of death</value>
+  </data>
+  <data name="DischargeView_TitleInjuryDiagnosis">
+    <value>Cause of injury</value>
+  </data>
+  <data name="DischargeView_TitleDiagnosis">
+    <value>Dispensary diagnosis</value>
+  </data>
+  <data name="DischargeView_TitleDischargeToInstitution">
+    <value>Transfer to the institution</value>
+  </data>
+  <data name="DischargeView_TitleOutcome">
+    <value>The outcome of dismissal</value>
+  </data>
+  <data name="DischargeView_TitleStatus">
+    <value>Status of dismissal</value>
+  </data>
+  <data name="LabDocumentSelectView_FirstAndLast">
+    <value>First and last</value>
+  </data>
+  <data name="DischargeView_ColumnCode">
+    <value>Code</value>
+  </data>
+  <data name="DischargeView_ColumnName">
+    <value>Title</value>
+  </data>
+  <data name="WorkSpaceTabViewModelFactory_CannotReadDocument">
+    <value>You do not have reading rights for the selected document</value>
+  </data>
+  <data name="LabTestsAnalyzeViewModel_InitLabTests_Error">
+    <value>Error in loading laboratory tests</value>
+  </data>
+  <data name="LabTestsAnalyzeViewModel_InitLabGrid_Error">
+    <value>Error in initiating the table of laboratory examinations</value>
+  </data>
+  <data name="LabTestsAnalyzeViewModel_InitLabCharts_Error">
+    <value>Error in initializing the charts of laboratory examinations</value>
+  </data>
+  <data name="LabTestsAnalyzeViewModel_ReferenceInterval">
+    <value>Ref. interval</value>
+  </data>
+  <data name="LabTestsAnalyzeView_LabTestGroup">
+    <value>Groups of examinations:</value>
+  </data>
+  <data name="LabTestsAnalyzeView_MaxParallelTests_Info">
+    <value>It is not possible to simultaneously analyze more than 8 laboratory tests.</value>
+  </data>
+  <data name="Menu_Consumption">
+    <value>Diagnosis and DTS procedures</value>
+  </data>
+  <data name="MainWindow_Title_WorkList">
+    <value>Working list</value>
+  </data>
+  <data name="MainWindow_Title_Patient">
+    <value>Examination of the patient</value>
+  </data>
+  <data name="WorkList_DischargedIncomplete">
+    <value>Dismissed unfinished</value>
+  </data>
+  <data name="PatientSearchViewModel_ItemsCountText_Full">
+    <value>Showing the first 100 receptions</value>
+  </data>
+  <data name="PatientSearchViewModel_ItemsCountText_NotFull">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="Menu_Template">
+    <value>Forms</value>
+  </data>
+  <data name="WorkListView_Filters_MyPatients">
+    <value>My patients</value>
+  </data>
+  <data name="WorkListView_Filters_NoConsumption">
+    <value>No expenses</value>
+  </data>
+  <data name="WorkListView_Filters_NoFinding">
+    <value>No findings</value>
+  </data>
+  <data name="WorkListView_Filters_NoDischargeLetter">
+    <value>No dismissal letter</value>
+  </data>
+  <data name="WorkListView_Filters_NoMainDiagnosis">
+    <value>Without the primary diagnosis</value>
+  </data>
+  <data name="WorkListView_Filters_UnfinishedOrders">
+    <value>With unfulfilled instructions</value>
+  </data>
+  <data name="WorkListView_Filters_UnreadDocument">
+    <value>With unread documents</value>
+  </data>
+  <data name="WorkListView_Filters_Danasnji">
+    <value>With a visit to the present date</value>
+  </data>
+  <data name="WorkListView_PatientHistory">
+    <value>History of selected patients</value>
+  </data>
+  <data name="WorkListView_Filters_ViewType">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="WorkListView_Filters_CurrentWorkPlace">
+    <value>Select the workplace</value>
+  </data>
+  <data name="WorkListView_Filters">
+    <value>Filters</value>
+  </data>
+  <data name="WorkListView_Grid_FullName">
+    <value>Name and surname</value>
+  </data>
+  <data name="WorkListView_Grid_DateOfBirth">
+    <value>Date of birth</value>
+  </data>
+  <data name="WorkListView_Grid_AdmissionDischargeDate">
+    <value>Date</value>
+  </data>
+  <data name="WorkListView_PatientSearch">
+    <value>Looking for the patient</value>
+  </data>
+  <data name="ChartHelper_Series_SpO2">
+    <value>SpO2</value>
+  </data>
+  <data name="SpO2">
+    <value>SpO2</value>
+  </data>
+  <data name="WorkSpaceTabViewModelFactory_LoadHtml_NoData">
+    <value>It is not possible to obtain the information for printing the document</value>
+  </data>
+  <data name="Menu_Documents">
+    <value>Documents</value>
+  </data>
+  <data name="Menu_OrdersGeneral">
+    <value>Instructions</value>
+  </data>
+  <data name="PatientAccessDenied">
+    <value>You do not have the right to access the patient</value>
+  </data>
+  <data name="WorkListView_DischargeStatus">
+    <value>Status of dismissal</value>
+  </data>
+  <data name="WorkListView_Filters_Sort">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="WorkListFilter_GetSortTypeName_FullName">
+    <value>Name and surname</value>
+  </data>
+  <data name="WorkListFilter_GetAdmissionTypeName_Poliklinika">
+    <value>Polyclinics</value>
+  </data>
+  <data name="WorkListFilter_GetAdmissionTypeName_Stacionar">
+    <value>Stacionar</value>
+  </data>
+  <data name="WorkListFilter_GetSortTypeName_Status">
+    <value>Status</value>
+  </data>
+  <data name="WorkListFilter_GetSortTypeName_AdmissionDate">
+    <value>Date and time of admission</value>
+  </data>
+  <data name="WorkListView_Grid_Location">
+    <value>Workplace</value>
+  </data>
+  <data name="WorkListView_Grid_Procedure">
+    <value>Intervention</value>
+  </data>
+  <data name="Menu_Grouping">
+    <value>Grouping</value>
+  </data>
+  <data name="WorkPlaceSelectTitle">
+    <value>Select the workplace</value>
+  </data>
+  <data name="ArchiveView_Filter_DocumentType">
+    <value>In the context of hospital care and medical examination: Type of document:</value>
+  </data>
+  <data name="ExternalDocumentView_Name">
+    <value>Title</value>
+  </data>
+  <data name="ExternalDocumentView_Date">
+    <value>Date</value>
+  </data>
+  <data name="ExternalDocumentView_Location">
+    <value>Location</value>
+  </data>
+  <data name="ExternalDocumentView_Type">
+    <value>Type of document</value>
+  </data>
+  <data name="ExternalDocumentView_Visit">
+    <value>Admission</value>
+  </data>
+  <data name="ExternalDocumentView_WorkPlace">
+    <value>Workplace</value>
+  </data>
+  <data name="ExternalDocumentView_Doctor">
+    <value>Doctor</value>
+  </data>
+  <data name="ExternalDocumentView_Open">
+    <value>Select</value>
+  </data>
+  <data name="ExternalDocumentView_Delete">
+    <value>Delete external find</value>
+  </data>
+  <data name="ArchiveView_AddExternalDocument">
+    <value>Add an external finding</value>
+  </data>
+  <data name="ArchiveView_OpenExternalDocument">
+    <value>Update external document</value>
+  </data>
+  <data name="ArchiveView_DeleteExternalDocument">
+    <value>Delete external document</value>
+  </data>
+  <data name="ArchiveViewModel_ExternalDocument">
+    <value>External document</value>
+  </data>
+  <data name="ArchiveViewModel_eKartonDocument">
+    <value>eKarton</value>
+  </data>
+  <data name="WorkListView_Tooltip_Finding">
+    <value>Written finding</value>
+  </data>
+  <data name="WorkListView_Tooltip_Consumption">
+    <value>Registered expenses</value>
+  </data>
+  <data name="WorkListView_Tooltip_UnfinishedOrders">
+    <value>There are non-executed instructions</value>
+  </data>
+  <data name="WorkListView_Tooltip_DischargeLetter">
+    <value>Written letter of dismissal</value>
+  </data>
+  <data name="WorkListView_Tooltip_UnreadDocuments">
+    <value>Unrequested documents</value>
+  </data>
+  <data name="WorkListView_Tooltip_CriticalDocuments">
+    <value>Critical documents</value>
+  </data>
+  <data name="WorkListView_Tooltip_Death">
+    <value>Recorded time of death</value>
+  </data>
+  <data name="WorkListViewModel_PatientCount">
+    <value>Show {0} from {1}</value>
+  </data>
+  <data name="DischargeViewModel_StatusHome">
+    <value>Home</value>
+  </data>
+  <data name="DischargeViewModel_StatusTransferToInstitution">
+    <value>Transfer to another institution</value>
+  </data>
+  <data name="DischargeViewModel_StatusDiedWithAutopsy">
+    <value>Died (obduced)</value>
+  </data>
+  <data name="DischargeViewModel_StatusDiedWithoutAutopsy">
+    <value>Died (not implanted)</value>
+  </data>
+  <data name="DischargeViewModel_StatusOther">
+    <value>Other</value>
+  </data>
+  <data name="DischargeViewModel_StatusTransfered">
+    <value>Transferred</value>
+  </data>
+  <data name="DischargeViewModel_StatusAgainstDoctorWill">
+    <value>Treatment ended contrary to the advice of the doctor</value>
+  </data>
+  <data name="DischargeView_TitleHospitalization">
+    <value>on the department</value>
+  </data>
+  <data name="DischargeView_WorkplaceGroup">
+    <value>Department</value>
+  </data>
+  <data name="DischargeView_TitleLocation">
+    <value>on location</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Odjel_Mandatory">
+    <value>Department is compulsory information</value>
+  </data>
+  <data name="DischargeViewModel_MoveConsumption">
+    <value>Do you want to transfer spending items to the department?</value>
+  </data>
+  <data name="DischargeView_VodeciLijecnik">
+    <value>leading doctor</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Date_InconsistentOutPatient">
+    <value>Date must be following the date of admission</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_ObligatoryAdmission">
+    <value>Date of examination is mandatory</value>
+  </data>
+  <data name="DoctorAdmissionDate">
+    <value>Date of examination</value>
+  </data>
+  <data name="PatientSearchView_Grid_Admission">
+    <value>Admission</value>
+  </data>
+  <data name="PatientSearchView_Grid_Discharge">
+    <value>Dismissal</value>
+  </data>
+  <data name="PatientSearchView_Grid_Location">
+    <value>Department</value>
+  </data>
+  <data name="PatientSearchView_Grid_VisitNumber">
+    <value>ML/SL</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_Diagnosis_Discharge">
+    <value>Diagnosis cannot be repulsive</value>
+  </data>
+  <data name="DischargeViewModel_CheckDocuments_Warning">
+    <value>It is not possible to make a dismissal. There are unprepared documents!</value>
+  </data>
+  <data name="ArchiveView_Grid_Export">
+    <value>Remove from the current document</value>
+  </data>
+  <data name="ArchiveView_Grid_Import">
+    <value>Insert to the current document</value>
+  </data>
+  <data name="LabTestsAnalyze">
+    <value>Analysis</value>
+  </data>
+  <data name="LabTestSelect">
+    <value>Import/Export</value>
+  </data>
+  <data name="TransfoundPreparations_DateIssued">
+    <value>Published</value>
+  </data>
+  <data name="TransfoundPreparations_DateTransfusionEnd">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="TransfoundPreparations_DateTransfusionStart">
+    <value>Beginning</value>
+  </data>
+  <data name="TransfoundPreparations_DoctorDemanded">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="TransfoundPreparations_DoctorEnd">
+    <value>Finished</value>
+  </data>
+  <data name="TransfoundPreparations_DoctorStart">
+    <value>Began</value>
+  </data>
+  <data name="TransfoundPreparations_Number">
+    <value>Number</value>
+  </data>
+  <data name="TransfoundPreparations_Reaction">
+    <value>Reaction</value>
+  </data>
+  <data name="TransfoundPreparations_Title">
+    <value>Type</value>
+  </data>
+  <data name="TransfoundPreparations_DateApplied">
+    <value>Applied</value>
+  </data>
+  <data name="TransfoundPreparations_DoctorApplied">
+    <value>Applied</value>
+  </data>
+  <data name="TransfoundPreparations_LOT">
+    <value>LOT</value>
+  </data>
+  <data name="TransfoundPreparations_REF">
+    <value>REF</value>
+  </data>
+  <data name="TransfoundPreparations_Department">
+    <value>Department</value>
+  </data>
+  <data name="TransfoundPreparations_AdmissionNr">
+    <value>Admission number</value>
+  </data>
+  <data name="msgFatalError">
+    <value>An unexpected error occurred. The application must be turned off. Please contact the administrator.</value>
+  </data>
+  <data name="DischargeViewModel_CheckDateDischarge_Warning">
+    <value>The entered date and time of dismissal does not match the reference values. Check the entered data!</value>
+  </data>
+  <data name="DischargeViewModel_CheckDischarge_BillAfterDischargeDate">
+    <value>There is an unsorted account after the entered dismissal date</value>
+  </data>
+  <data name="DischargeViewModel_CheckDischarge_ExistsBill">
+    <value>It is not possible to change the date of dismissal because there is an unchecked account</value>
+  </data>
+  <data name="ArchiveItemPrintCommand_NoPrint">
+    <value>Currently no printing is available for this document</value>
+  </data>
+  <data name="ArchiveView_Grid_Import_ExternalSource">
+    <value>Select</value>
+  </data>
+  <data name="ArchiveView_Grid_ExportInCsv">
+    <value>Export to CSV</value>
+  </data>
+  <data name="LabTest_NotSelectedForExport">
+    <value>You have not marked laboratory tests for export!</value>
+  </data>
+  <data name="LabTest_ExportInCsv_Delimiter">
+    <value>Delimiter</value>
+  </data>
+  <data name="LabTest_ExportInCsv_ExportHeader">
+    <value>Export the head</value>
+  </data>
+  <data name="LabTest_ExportInCsv_ExportRefValue">
+    <value>Export reference indicator (high/low)</value>
+  </data>
+  <data name="LabTestExportInCsv_DelimiterIsRequired">
+    <value>Delimiter is mandatory information</value>
+  </data>
+  <data name="LabTestExportInCsv_Success">
+    <value>Export to CSV has been performed successfully!</value>
+  </data>
+  <data name="LabTestExportInScv_Delimiter">
+    <value>ZAREZ (",") is not allowed as a delimiter!</value>
+  </data>
+  <data name="Menu_Consultation">
+    <value>Concilio</value>
+  </data>
+  <data name="MainDiagnosisLabel">
+    <value>Main diagnosis</value>
+  </data>
+  <data name="ExternalDocumentView_Internal">
+    <value>Internal</value>
+  </data>
+  <data name="ExternalDocumentView_External">
+    <value>In the context of hospital care and medical examination: External</value>
+  </data>
+  <data name="Menu_Explantation">
+    <value>Neurocritical patients</value>
+  </data>
+  <data name="DTS">
+    <value>DTS</value>
+  </data>
+  <data name="Expense">
+    <value>Cost</value>
+  </data>
+  <data name="Immunizations">
+    <value>Vaccinations</value>
+  </data>
+  <data name="PatientDateOfBirth">
+    <value>Date of birth</value>
+  </data>
+  <data name="PatientGender">
+    <value>Gender</value>
+  </data>
+  <data name="PatientName">
+    <value>Name</value>
+  </data>
+  <data name="PatientSurname">
+    <value>In the context of hospital care and medical examination: Surname</value>
+  </data>
+  <data name="UnsavedChildSelected">
+    <value>The selected child is not saved in the register.</value>
+  </data>
+  <data name="NoChildSelected">
+    <value>Not selected</value>
+  </data>
+  <data name="SelectPatient">
+    <value>Selection of the patient</value>
+  </data>
+  <data name="RegistarDocumentationDeleteMessage">
+    <value>You cannot delete a child from the register because there is a document, reservation or some other record!</value>
+  </data>
+  <data name="RegistarSuccessfulDelete">
+    <value>Successfully deleted record of diet</value>
+  </data>
+  <data name="ArchiveGroupDetailViewGrupNameValidation">
+    <value>The title of the episode of the document must contain a minimum of {0} characters</value>
+  </data>
+  <data name="ArchiveGroupDetailViewInsertGroupName">
+    <value>Enter the name of the episode:</value>
+  </data>
+  <data name="ArchiveGroupDetailViewTitle">
+    <value>Unos calls episodes</value>
+  </data>
+  <data name="ArchiveViewArchiveGroupAdd">
+    <value>Add to new episode</value>
+  </data>
+  <data name="ArchiveViewArchiveGroupEdit">
+    <value>Add to an existing episode</value>
+  </data>
+  <data name="ArchiveViewArchiveGroupRemove">
+    <value>Get out of episode</value>
+  </data>
+  <data name="ArchiveViewArchiveGroupRename">
+    <value>Edit episode title</value>
+  </data>
+  <data name="ArchiveViewDocumentIndications">
+    <value>Results</value>
+  </data>
+  <data name="ArchiveGroupChangeStatusLocked">
+    <value>Close the episode</value>
+  </data>
+  <data name="ArchiveGroupChangeStatusUnlock">
+    <value>Open episode</value>
+  </data>
+  <data name="ArchiveGroupItemSelectGroup">
+    <value>Select episode</value>
+  </data>
+  <data name="ArchiveGroupItemShowLocked">
+    <value>Show closed episodes</value>
+  </data>
+  <data name="ArchiveGroupItemAddToLockedConfirmation">
+    <value>Have you selected a closed episode. Would you like to continue adding findings to the closed episode?</value>
+  </data>
+  <data name="ArchiveGroupStatusLocked">
+    <value>Closed</value>
+  </data>
+  <data name="ArchiveGroupStatusUnlocked">
+    <value>Open</value>
+  </data>
+  <data name="ArchiveGroupActionNoPermission">
+    <value>It is not possible to take action because you do not have the rights</value>
+  </data>
+  <data name="ArchiveGroupActionNoPermissionContinue">
+    <value>You do not have rights to certain documents, do you want to continue? You do not have rights to the following documents: {0}</value>
+  </data>
+  <data name="ArchiveGroupLockConfimationMessage">
+    <value>Are you sure you want to close the episode?</value>
+  </data>
+  <data name="ArchiveGroupUnlockConfirmationMessage">
+    <value>Are you sure you want to open the episode?</value>
+  </data>
+  <data name="LabTestReorderButton_Tooltip">
+    <value>Change the date order to rising/falling</value>
+  </data>
+  <data name="Measures">
+    <value>In the context of hospital care and medical examination: Measures</value>
+  </data>
+  <data name="GridControl_ColumnHeader_Dijete">
+    <value>Child</value>
+  </data>
+  <data name="Menu_Infections">
+    <value>In the context of hospital care and medical examination: Infections</value>
+  </data>
+  <data name="WorkListView_Filters_MicrobiologicalFinding">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="InfectionCandidates_Add_Confirm">
+    <value>With this action all selected patients will become candidates for infection. Do you want to continue?</value>
+  </data>
+  <data name="PatientSearchView_Grid_InfectionCandidate">
+    <value>Candidate for infections</value>
+  </data>
+  <data name="WorkListView_Filters_OtherInstitution">
+    <value>Other institution</value>
+  </data>
+  <data name="WorkListView_Filters_SD021Diagnosis">
+    <value>In the context of hospital care and medical examination: High risk of infection</value>
+  </data>
+  <data name="WorkListView_Filters_Conclusion">
+    <value>Conclusion</value>
+  </data>
+  <data name="WorkListView_Filters_Conclusions">
+    <value>Conclusions</value>
+  </data>
+  <data name="WorkListView_Filters_Measure">
+    <value>In the context of hospital care and medical examination: Measures</value>
+  </data>
+  <data name="WorkListView_Filters_NoIndication">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="WorkListView_Filters_OldInfections">
+    <value>Previous infections</value>
+  </data>
+  <data name="WorkListView_Filters_Survey">
+    <value>Overview</value>
+  </data>
+  <data name="WorkListFilter_Filters_BeforeHospitalization">
+    <value>Before actual hospitalization</value>
+  </data>
+  <data name="WorkListFilter_Filters_DuringHospitalization">
+    <value>During current hospitalization</value>
+  </data>
+  <data name="WorkListFilter_Filters_PreviousHospitalization">
+    <value>In prior hospitalization</value>
+  </data>
+  <data name="WorkListView_Filters_Colonizations">
+    <value>Colonization</value>
+  </data>
+  <data name="WorkListView_Filters_Infections">
+    <value>In the context of hospital care and medical examination: Infections</value>
+  </data>
+  <data name="ConnectDocumentWithInfectionMessage">
+    <value>Are you sure you want to associate the finding with an infection?</value>
+  </data>
+  <data name="PatientView_NoSelectedCandidates_Message">
+    <value>There are no selected candidates for admission.</value>
+  </data>
+  <data name="PatientSearchInfections_Title">
+    <value>Adding candidates for infections</value>
+  </data>
+  <data name="PatientSearch_Title">
+    <value>Searching patients</value>
+  </data>
+  <data name="InfectionLink">
+    <value>Related to the current infection</value>
+  </data>
+  <data name="DisconnectDocumentwithInfectionMessage">
+    <value>Are you sure you want to remove the link between the findings and the infection?</value>
+  </data>
+  <data name="Archive_PrintAll">
+    <value>Write down everything</value>
+  </data>
+  <data name="Archive_PrintCancel">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="Archive_PrintLast">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="Archive_PrintSelected">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="ArchiveView_AddTo">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="ArchiveView_Print">
+    <value>Exam</value>
+  </data>
+  <data name="ArchiveView_PrintGroup">
+    <value>Expression of episode</value>
+  </data>
+  <data name="ArchiveView_LinkWithInfection">
+    <value>Connect the finding with an infection</value>
+  </data>
+  <data name="ArchiveView_UnlinkWithInfection">
+    <value>Remove the link between findings and infection</value>
+  </data>
+  <data name="AttachmentsLink">
+    <value>Annexes</value>
+  </data>
+  <data name="ValidationMsg_UnknownExtension">
+    <value>Unknown extension!</value>
+  </data>
+  <data name="PrintWithArchiveTitle">
+    <value>Selection of documents for import</value>
+  </data>
+  <data name="ObjectPatients">
+    <value>Patients in the department</value>
+  </data>
+  <data name="PrintWithArchiveAbortedNoArchiveSelected">
+    <value>Printing stopped because no archive document was selected</value>
+  </data>
+  <data name="TimeLineView_Filter_ViewType_Detailed">
+    <value>Details</value>
+  </data>
+  <data name="TimeLineView_Filter_ViewType_Simple">
+    <value>Simple</value>
+  </data>
+  <data name="WorkSpaceTabViewModelFactory_Button_Images">
+    <value>Pictures</value>
+  </data>
+  <data name="Menu_DailyHospital">
+    <value>Daily hospital</value>
+  </data>
+  <data name="WorkListView_Grid_Doctor">
+    <value>Doctor</value>
+  </data>
+  <data name="WorkListView_Grid_Orders_Laboratory">
+    <value>Lab</value>
+  </data>
+  <data name="WorkListView_Grid_Orders_Others">
+    <value>Ost</value>
+  </data>
+  <data name="WorkListView_Grid_Orders_Radiology">
+    <value>Work</value>
+  </data>
+  <data name="WorkListView_Refresh">
+    <value>Refresh</value>
+  </data>
+  <data name="WorkListViewModel_WorkPlaceRequired">
+    <value>It is necessary to choose the workplace</value>
+  </data>
+  <data name="LabTests_AbnormalityIndicator_Alarming">
+    <value>AA, Invalid, G</value>
+  </data>
+  <data name="DischargeViewModel_HospitalizationDone">
+    <value>Created a register {0} for the patient.</value>
+  </data>
+  <data name="DischargeViewModel_HospitalizationDoneContinue">
+    <value>A register {0} has been created for the patient.\r\nDo you want to continue the treatment of the patient in the hospital?</value>
+  </data>
+  <data name="TimeLineView_Filter_ViewType_LabResults">
+    <value>In the context of hospital care and medical examination: Laboratory examinations</value>
+  </data>
+  <data name="TimeLineView_Filter_Zoom">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="DischargeView_ColumnClinic">
+    <value>Activity</value>
+  </data>
+  <data name="WorkListView_DoctorTherapistSearch">
+    <value>Look for a doctor/therapist</value>
+  </data>
+  <data name="WorkListView_DoctorSearch">
+    <value>Look for a doctor</value>
+  </data>
+  <data name="Menu_Transfers">
+    <value>Movements</value>
+  </data>
+  <data name="TransferView_AdmissionDate">
+    <value>Date of admission</value>
+  </data>
+  <data name="TransferView_Diagnosis">
+    <value>In the context of hospital care and medical examination: Diagnosis:</value>
+  </data>
+  <data name="TransferView_LeadingDoctor">
+    <value>Leading doctor:</value>
+  </data>
+  <data name="TransferView_Outcome">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="TransferView_Room">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="TransferView_TransferDate">
+    <value>Date of transfer:</value>
+  </data>
+  <data name="TrasnsferView_OdjelTipRadilista">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="TransferView_OdjelTipRadiliste">
+    <value>Department</value>
+  </data>
+  <data name="TransferView_ColumnCode">
+    <value>Code</value>
+  </data>
+  <data name="TransferView_ColumnName">
+    <value>Title</value>
+  </data>
+  <data name="TransferView_TransferTime">
+    <value>Transfer time:</value>
+  </data>
+  <data name="Menu_Emergency">
+    <value>OHBP</value>
+  </data>
+  <data name="WorkListView_Grid_Triage">
+    <value>Kat</value>
+  </data>
+  <data name="WorkListView_Grid_ProcessingTime">
+    <value>Duration</value>
+  </data>
+  <data name="WorkListView_Grid_JuniorDoctor">
+    <value>Younger service</value>
+  </data>
+  <data name="WorkListView_Grid_Comment">
+    <value>Note</value>
+  </data>
+  <data name="WorkListFilter_GetSortTypeName_ProcessingTime">
+    <value>In the context of hospital care and medical examination: Duration of treatment</value>
+  </data>
+  <data name="WorkListFilter_GetSortTypeName_Triage">
+    <value>Triangular category</value>
+  </data>
+  <data name="TransferViewModel_AddValidationRules_Error_Diagnosis_Mandatory">
+    <value>Diagnosis is mandatory information</value>
+  </data>
+  <data name="TransferViewModel_AddValidationRules_Error_Odjel_Mandatory">
+    <value>Department is compulsory information</value>
+  </data>
+  <data name="TransferViewModel_AddValidationRules_Error_Outcome_Mandatory">
+    <value>Result is mandatory</value>
+  </data>
+  <data name="TransferViewModel_AddValidationRules_Error_ZahvatPoslovni_Mandatory">
+    <value>The procedure is mandatory information</value>
+  </data>
+  <data name="TransferViewModel_TipDjelatnosti_Warning">
+    <value>It is not possible to move the patient from chronic to acute activity. It is necessary to open a new register!</value>
+  </data>
+  <data name="TransferView_ZahvatPoslovni">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="TransferViewModel_AddValidationRules_Error_VodeciLijecnik_Mandatory">
+    <value>Leading doctor is mandatory information</value>
+  </data>
+  <data name="TransferViewModel_AddValidationRules_Error_TransferDate_Mandatory">
+    <value>Date of transfer is mandatory information</value>
+  </data>
+  <data name="TransferViewModel_AddValidationRules_Error_TransferDate_Inconsistent">
+    <value>The date and time of the transfer must be greater than the date and time of admission to the department.</value>
+  </data>
+  <data name="TransferViewModel_PremjestajPravo_Warning">
+    <value>You do not have the right to transfer the patient to another department!</value>
+  </data>
+  <data name="TimeLineView_Filter_Sort">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="TimeLineView_Filter_Sort_Ascending">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="TimeLineView_Filter_Sort_Descending">
+    <value>Downtown</value>
+  </data>
+  <data name="TransferViewModel_AddValidationRules_Error_AccomodationType_Mandatory">
+    <value>Type of accommodation is a mandatory information</value>
+  </data>
+  <data name="TransferView_AccomodationType">
+    <value>Type of accommodation:</value>
+  </data>
+  <data name="WorkListView_Filters_InfectionCause">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="WorkListView_Filters_InfectionCauseSample">
+    <value>Sample</value>
+  </data>
+  <data name="WorkListView_Filters_Institutions">
+    <value>Institutions</value>
+  </data>
+  <data name="WorkListView_Filters_AdmissionType">
+    <value>Type of admission</value>
+  </data>
+  <data name="WorkListView_Grid_SeniorDoctor">
+    <value>Senior service</value>
+  </data>
+  <data name="DischargeViewModel_FinalDocs_Question_">
+    <value>Do you want to print the final document of treatment?</value>
+  </data>
+  <data name="ChangeLog">
+    <value>History of changes</value>
+  </data>
+  <data name="Tools_Discharge">
+    <value>Dismissal</value>
+  </data>
+  <data name="Tools_FindingAdd">
+    <value>Add finding</value>
+  </data>
+  <data name="Tools_Delete">
+    <value>Remove</value>
+  </data>
+  <data name="Tools_Room">
+    <value>Room</value>
+  </data>
+  <data name="Tools_FindingView">
+    <value>Review of findings</value>
+  </data>
+  <data name="Tools_Orders">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="Tools_OrdersInternal">
+    <value>Internal instructions</value>
+  </data>
+  <data name="WorkSpaceView_ActionIsHidden">
+    <value>It is not possible to initiate the action {0} because it is hidden.</value>
+  </data>
+  <data name="NeonatusDocument_Tooltip">
+    <value>Document of the newborn</value>
+  </data>
+  <data name="ReferralType">
+    <value>Type of instructions</value>
+  </data>
+  <data name="WorkListView_Grid_ReferralType">
+    <value>UP</value>
+  </data>
+  <data name="WorkListView_Grid_ReferralTypeTooltip">
+    <value>Type of instructions</value>
+  </data>
+  <data name="TimelineView_CannotReadDocument">
+    <value>You are not granted the right to view documents on this workplace</value>
+  </data>
+  <data name="SaveChanges_Question">
+    <value>Do you want to save changes before closing?</value>
+  </data>
+  <data name="WorkListView_Grid_Room">
+    <value>Room</value>
+  </data>
+  <data name="RespiratoryRate">
+    <value>Respiratory frequency</value>
+  </data>
+  <data name="DischargeView_ColumnLatinName">
+    <value>Latin name</value>
+  </data>
+  <data name="ExternalDocTooltip">
+    <value>Document coming from the external BIS</value>
+  </data>
+  <data name="DecursusGroup">
+    <value>The course of disease</value>
+  </data>
+  <data name="Menu_TemperatureList">
+    <value>Temperature list</value>
+  </data>
+  <data name="ArchiveView_Filter_Unread">
+    <value>Unproven findings</value>
+  </data>
+  <data name="Tools_Consumption">
+    <value>Diagnosis and DTS procedures</value>
+  </data>
+  <data name="Tools_Decursus">
+    <value>Add the course of the disease</value>
+  </data>
+  <data name="Tools_DischargeLetterAdd">
+    <value>Add dismissal letter</value>
+  </data>
+  <data name="Tools_DischargeLetterView">
+    <value>In the context of hospital care and medical examination: Review of the dismissal letter</value>
+  </data>
+  <data name="Tools_Medication">
+    <value>Therapy</value>
+  </data>
+  <data name="Tools_Accreditation">
+    <value>Accreditation</value>
+  </data>
+  <data name="Menu_ConsumptionOld">
+    <value>Expenditure</value>
+  </data>
+  <data name="WorkListView_Filters_Discharge">
+    <value>Dismissal</value>
+  </data>
+  <data name="GridControl_ConclusionDocument">
+    <value>Conclusion document</value>
+  </data>
+  <data name="GridControl_Laboratory">
+    <value>Laboratory</value>
+  </data>
+  <data name="GridControl_MainDiagnosis">
+    <value>Main diagnosis</value>
+  </data>
+  <data name="GridControl_Others">
+    <value>Other</value>
+  </data>
+  <data name="GridControl_Radiology">
+    <value>Radiology</value>
+  </data>
+  <data name="GridControl_VisitType">
+    <value>Type of visit</value>
+  </data>
+  <data name="GridUserSettings_HiddenColumns">
+    <value>Hidden columns</value>
+  </data>
+  <data name="GridUserSettings_VisibleColumns">
+    <value>Visible columns</value>
+  </data>
+  <data name="WorkListView_ColumnsConfiguration">
+    <value>Configuration of columns</value>
+  </data>
+  <data name="WorkListView_Grid_OrderedFrom">
+    <value>In the context of hospital care and medical examination: Instruction</value>
+  </data>
+  <data name="WorkListView_ProcedureSearch">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="Menu_All">
+    <value>ALL</value>
+  </data>
+  <data name="Centimeters_Short">
+    <value>cm</value>
+  </data>
+  <data name="Kilograms_Short">
+    <value>kg</value>
+  </data>
+  <data name="HeightCentimeters">
+    <value>height (cm)</value>
+  </data>
+  <data name="WeightKilograms">
+    <value>weight (kg)</value>
+  </data>
+  <data name="WorkListView_Filters_ProcessingNotStarted">
+    <value>The treatment has not begun</value>
+  </data>
+  <data name="WorkListView_Filters_ProcessingNotStarted_Tooltip">
+    <value>No findings or orders created</value>
+  </data>
+  <data name="GridControl_eDokumentStatus">
+    <value>Status of dispatch</value>
+  </data>
+  <data name="WorkListView_Tooltip_UrgentPatient">
+    <value>The patient is urgent</value>
+  </data>
+  <data name="TimeLineView_Filter_CurrentAdmission">
+    <value>Current admission</value>
+  </data>
+  <data name="WorkListView_Grid_Document">
+    <value>Document</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_DischargeDate">
+    <value>Date of dismissal is longer than planned</value>
+  </data>
+  <data name="Menu_Inpatient">
+    <value>Stacionar</value>
+  </data>
+  <data name="Menu_Clinic">
+    <value>Ambulance</value>
+  </data>
+  <data name="Menu_Diagnostics">
+    <value>Diagnostics</value>
+  </data>
+  <data name="Tools_ConsumptionOld">
+    <value>Expenditure</value>
+  </data>
+  <data name="WorkListView_Tooltip_MainDiagnosis">
+    <value>Main diagnosis</value>
+  </data>
+  <data name="Tools_BloodTransfusion">
+    <value>Transfusion</value>
+  </data>
+  <data name="WorkListViewModel_WorkPlaceOfSpecifiedTypeRequired">
+    <value>It is necessary to choose a workplace of the appropriate type</value>
+  </data>
+  <data name="ReservationDelete_Indicator">
+    <value>The patient is registered for death time. Do you want to cancel a reservation for the patient and remove him from the waiting list?</value>
+  </data>
+  <data name="DischargeViewModel_AddValidationRules_Error_VodeciLijecnik_Mandatory">
+    <value>Leading doctor is mandatory information</value>
+  </data>
+  <data name="ExternalModuleHelper_UtrosakWarning">
+    <value>The patient is hospitalized. No staceva intake is allowed because the visit was transferred to the hospital!</value>
+  </data>
+  <data name="Menu_PhysicalTherapy">
+    <value>Physical therapy</value>
+  </data>
+  <data name="PhysicalTherapy_Attributes">
+    <value>Attributes</value>
+  </data>
+  <data name="PhysicalTherapy_GridColumn_Code">
+    <value>Code</value>
+  </data>
+  <data name="PhysicalTherapy_GridColumn_Comment">
+    <value>Note</value>
+  </data>
+  <data name="PhysicalTherapy_GridColumn_Name">
+    <value>Title</value>
+  </data>
+  <data name="PhysicalTherapy_GridColumn_NumTherapies">
+    <value>Number</value>
+  </data>
+  <data name="PhysicalTherapy_OrganisationalUnit">
+    <value>Organizational units</value>
+  </data>
+  <data name="PhysicalTherapy_PreviousReferral">
+    <value>Repeat previous therapy</value>
+  </data>
+  <data name="PhysicalTherapy_ProtocolNum">
+    <value>Protocol number:</value>
+  </data>
+  <data name="PhysicalTherapy_SelectedInterventions">
+    <value>Selected procedures</value>
+  </data>
+  <data name="PhysicalTherapy_UniversalRepetitionsNumber">
+    <value>No.</value>
+  </data>
+  <data name="PhysicalTherapy_Doctor">
+    <value>Doctor</value>
+  </data>
+  <data name="PhysicalTherapy_ValidationRules_Doctor">
+    <value>The doctor is mandatory information</value>
+  </data>
+  <data name="PhysicalTherapy_ValidationRules_NumTherapies">
+    <value>Number of therapies is mandatory information</value>
+  </data>
+  <data name="PhysicalTherapy_PreviousProtocolNum">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="PhysicalTherapy_PreviousInsertDate">
+    <value>Created at:</value>
+  </data>
+  <data name="PhysicalTherapy_UnionOrganisationalUnit">
+    <value>All units</value>
+  </data>
+  <data name="PhysicalTherapy_ValidationRules_OrganisationalUnit">
+    <value>Organizational unit is obligatory information</value>
+  </data>
+  <data name="PhysicalTherapy_ValidationRules_MaxNumTherapies">
+    <value>The number of therapies must be less than the maximum permitted ({0})</value>
+  </data>
+  <data name="PhysicalTherapy_ValidationRules_Interventions">
+    <value>The procedure is mandatory information</value>
+  </data>
+  <data name="Menu_Consumptions">
+    <value>Expenditure</value>
+  </data>
+  <data name="Menu_FastEntry">
+    <value>Quick admission</value>
+  </data>
+  <data name="Menu_DTSConsumption">
+    <value>In the context of hospital care and medical examination: DTS procedures</value>
+  </data>
+  <data name="Menu_Accreditation">
+    <value>Accreditation</value>
+  </data>
+  <data name="WorkListView_Tooltip_Escort">
+    <value>The person is accompanied by</value>
+  </data>
+  <data name="PhysicalTherapy_Warning_MultipleOrganisationalUnits">
+    <value>You have selected interventions of different organizational units</value>
+  </data>
+  <data name="DeleteOrder_Warning">
+    <value>Are you sure you want to delete a patient from the list?</value>
+  </data>
+  <data name="Tools_DTSConsumption">
+    <value>In the context of hospital care and medical examination: DTS procedures</value>
+  </data>
+  <data name="Tools_FastEntry">
+    <value>Quick admission</value>
+  </data>
+  <data name="WorkListView_WorkPlaceFlyoutHeader">
+    <value>Selection of the workplace</value>
+  </data>
+  <data name="OrderDetails">
+    <value>In the context of hospital care and medical examination: Details of the examination</value>
+  </data>
+  <data name="OrderDetailsComment">
+    <value>Comment search:</value>
+  </data>
+  <data name="OrderDetailsEmergency">
+    <value>Emergency examination:</value>
+  </data>
+  <data name="OrderDetailsHospitalCounter">
+    <value>In the context of hospital care and medical examination:</value>
+  </data>
+  <data name="OrderDetailsInsertDatum">
+    <value>Time of order:</value>
+  </data>
+  <data name="OrderDetailsNameLastNameEmployee">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="OrderDetailsResultsApprovedByEmployee">
+    <value>Results approved:</value>
+  </data>
+  <data name="OrderDetailsWorkSite">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="OrderDetailsAmbCounter">
+    <value>In the context of hospital care and medical examination:</value>
+  </data>
+  <data name="Tools_PhysicalTherapy_Perform">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="Tools_PhysicalTherapy_Revert">
+    <value>In the context of hospital care and medical examination: Return</value>
+  </data>
+  <data name="WorkListView_Grid_ArrivalTime">
+    <value>Arrival</value>
+  </data>
+  <data name="WorkListView_Grid_ReservationTime">
+    <value>Term</value>
+  </data>
+  <data name="PhysicalTherapy_Confirm">
+    <value>Do you want to perform physical therapy for selected patients?</value>
+  </data>
+  <data name="PhysicalTherapy_Revert">
+    <value>Do you want to cancel physical therapy for selected patients?</value>
+  </data>
+  <data name="DischargeDeathTime_Warning">
+    <value>Date and time of death must not be in the future!</value>
+  </data>
+  <data name="WorkListView_PhysicalTherapist">
+    <value>Physiotherapist</value>
+  </data>
+  <data name="PhysicalTherapy_ValidationRules_PhysicalTherapist">
+    <value>Physiotherapist is mandatory information</value>
+  </data>
+  <data name="PhysicalTherapy_ValidationRules_PhysicalTherapistLocation">
+    <value>No expenses can be entered because the selected physiotherapist is not registered at the workplace {0}.</value>
+  </data>
+  <data name="Tools_PhysicalTherapyReport">
+    <value>Physiotherapy</value>
+  </data>
+  <data name="WorkListView_Grid_ReservationResource">
+    <value>Resources</value>
+  </data>
+  <data name="WorkListView_RezervationResourceSearch">
+    <value>Search for resource</value>
+  </data>
+  <data name="PhysicalTherapyFinding">
+    <value>Fiz. finding</value>
+  </data>
+  <data name="WorkListView_Tooltip_Invoice">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="OncologyDischagrgeQuestion">
+    <value>Do you want to open the ONKO form immediately given that the patient has a C diagnosis?</value>
+  </data>
+  <data name="DijabDischagrgeQuestion">
+    <value>Do you want to open the DIAB form immediately given that the patient has a diabetes diagnosis?</value>
+  </data>
+  <data name="PhysicalTherapy_OtherReferrals">
+    <value>View other references</value>
+  </data>
+  <data name="PhysicalTherapy_OpenOtherReferral">
+    <value>By viewing the reference in the archive, data that has not been saved will be erased.</value>
+  </data>
+  <data name="PhysicalTherapy_Status">
+    <value>Status</value>
+  </data>
+  <data name="PhysicalTherapy_PhysicalFinding">
+    <value>Physiatric finding</value>
+  </data>
+  <data name="PhysicalTherapy_CloseOtherReferral">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="PhysicalTherapy_FindingNotExists">
+    <value>The reference is not related to the finding. Would you like to continue?</value>
+  </data>
+  <data name="DWMainView_Tab_Patient">
+    <value>Patient</value>
+  </data>
+  <data name="DWMainView_Tab_WorkList">
+    <value>Working lists</value>
+  </data>
+  <data name="WorkListView_BackButtonTooltip">
+    <value>Return to work lists</value>
+  </data>
+  <data name="PhysicalTherapy_UnosBezUtrosak">
+    <value>For some of the selected patients the visit has been billed and an invoice has been made. The expenses will not be recorded. Do you want all selected to go into the executed?</value>
+  </data>
+  <data name="Tests">
+    <value>Testing</value>
+  </data>
+  <data name="PhysicalTherapyViewModel_Cancel">
+    <value>Cancel</value>
+  </data>
+  <data name="PhysicalTherapyViewModel_CancelMessage">
+    <value>Do you want to cancel the referral?</value>
+  </data>
+  <data name="PhysicalTherapyViewModel_SuccessCancel">
+    <value>The referral is cancelled.</value>
+  </data>
+  <data name="HospitalRoom_LeadingDoctor">
+    <value>Leading doctor</value>
+  </data>
+  <data name="HospitalRoom_MBO">
+    <value>Family number of the insured person</value>
+  </data>
+  <data name="HospitalRoom_Date">
+    <value>Date</value>
+  </data>
+  <data name="HospitalRoom_ColumnCode">
+    <value>Code</value>
+  </data>
+  <data name="HospitalRoom_ColumnName">
+    <value>Title</value>
+  </data>
+  <data name="HospitalRoom_Room">
+    <value>Room</value>
+  </data>
+  <data name="HospitalRoom_AccomodationType">
+    <value>Type of accommodation</value>
+  </data>
+  <data name="HospitalRoom_AccomodationType_Bed">
+    <value>Bed</value>
+  </data>
+  <data name="HospitalRoom_AccomodationType_Aid">
+    <value>Accompaniment</value>
+  </data>
+  <data name="HospitalRoom_AccomodationType_Room">
+    <value>Room</value>
+  </data>
+  <data name="HospitalRoom_AccomodationType_Warning">
+    <value>In the context of hospital care and medical examination: The patient is already placed in the room.</value>
+  </data>
+  <data name="HospitalRoom_AccomodationType_RoomFull">
+    <value>The room is busy.</value>
+  </data>
+  <data name="HospitalRoom_AccomodationType_RoomStatus">
+    <value>I cannot occupy the entire room.</value>
+  </data>
+  <data name="WorkListView_Grid_VisitNumber">
+    <value>Admission</value>
+  </data>
+  <data name="WorkListView_Clinic">
+    <value>Activity</value>
+  </data>
+  <data name="WorkListView_Export">
+    <value>Export</value>
+  </data>
+  <data name="WorkListViewModel_Export_Filter_Excel">
+    <value>Excel files.xlsx</value>
+  </data>
+  <data name="WorkListViewModel_Export_Title">
+    <value>Export work list</value>
+  </data>
+  <data name="WorkListViewModel_Export_Success_Excel">
+    <value>Successful export of the worklist to Excel.</value>
+  </data>
+  <data name="resImportByFieldsTooltip">
+    <value>Insert to the appropriate fields of the current document</value>
+  </data>
+  <data name="ArchiveView_Filter_CurrentClinic">
+    <value>Current activity</value>
+  </data>
+  <data name="PhysicalTherapyDifferentStartUpDepartment">
+    <value>The patient is in another department. It is possible to prescribe therapy incorrectly at the wrong workplace!</value>
+  </data>
+  <data name="PhysicalTherapy_PatientAdmissionWithoutFtrNarucivanje">
+    <value>The patient is in a department where it is not possible to order for physical therapy!</value>
+  </data>
+  <data name="CEZIHSendDocsQuestion">
+    <value>You have documents ready to send to CEZIH. Do you want to send them now?</value>
+  </data>
+  <data name="CEZIHSendDocsTitle">
+    <value>Sending documents to CEZIH</value>
+  </data>
+  <data name="CandidateNotSuccessfullyAdded">
+    <value>The candidate has not been successfully added!</value>
+  </data>
+  <data name="CandidateSuccessfullyAdded">
+    <value>The candidate has been successfully added!</value>
+  </data>
+  <data name="DischargeViewModel_OpenMaticniList">
+    <value>It is not possible to delete discharge data because there is an open register {0} for the patient.</value>
+  </data>
+  <data name="GridControl_Therapy">
+    <value>Therapy</value>
+  </data>
+  <data name="WorkListView_Grid_Orders_Therapy">
+    <value>In the context of hospital care and medical examination: Ter</value>
+  </data>
+  <data name="MedicationViewTherapyIndications">
+    <value>Therapies</value>
+  </data>
+  <data name="MedicationView_Filter_CurrentDoctorTherapy">
+    <value>My therapy</value>
+  </data>
+  <data name="MedicationView_Filter_TherapyType">
+    <value>In the context of hospital care and medical examination: Type of therapy:</value>
+  </data>
+  <data name="MedicationView_TherapyStatus">
+    <value>Status of therapy</value>
+  </data>
+  <data name="OrdersView_Filter_CurrentDoctorOrders">
+    <value>My instructions</value>
+  </data>
+  <data name="OrdersView_Filter_OrderStatus">
+    <value>Status of reference:</value>
+  </data>
+  <data name="PhysicalTherapy_PrintDirect">
+    <value>Quick printing of findings</value>
+  </data>
+  <data name="Menu_OrdersExternal">
+    <value>eUputnice</value>
+  </data>
+  <data name="ArchiveView_LinkWitheUputnica">
+    <value>Link the document to eUputnica</value>
+  </data>
+  <data name="OverviewOfTheEOrderWithAttachment">
+    <value>Review</value>
+  </data>
+  <data name="ArchiveView_Filter_Search">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="ReferralsView_Filter_ReferralType">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="ReferralsView_Filter_Doctor">
+    <value>In the context of the hospital care and medical examination:</value>
+  </data>
+  <data name="ColumnIme">
+    <value>Name</value>
+  </data>
+  <data name="ColumnPrezime">
+    <value>In the context of hospital care and medical examination: Surname</value>
+  </data>
+  <data name="ColumnSifra">
+    <value>Code</value>
+  </data>
+  <data name="ReferralsView_Filter_Doctors">
+    <value>Staff</value>
+  </data>
+  <data name="ReferralsView_Filter_ReferralCount">
+    <value>In the context of hospital care and medical examination: Number of referrals:</value>
+  </data>
+  <data name="ReferralsView_MedicalProcedure">
+    <value>Intervention/Procedure</value>
+  </data>
+  <data name="ReferralsView_PriorityType">
+    <value>Type</value>
+  </data>
+  <data name="ReferralsView_ReferralType">
+    <value>Type of instructions</value>
+  </data>
+  <data name="ReferralsView_Status">
+    <value>Status</value>
+  </data>
+  <data name="ReferralsView_DataNotLoaded">
+    <value>No data</value>
+  </data>
+  <data name="ReferralsView_LoadData">
+    <value>Receiving data</value>
+  </data>
+  <data name="ReferralsView_ResetFilters">
+    <value>Remove selected filters</value>
+  </data>
+  <data name="PatientSearchView_CON_ValidMessage">
+    <value>Incorrect CON number</value>
+  </data>
+  <data name="ArchiveViewModel_DocumentNotPDF">
+    <value>An error occurred when creating a PDF! It is not possible to link the document to eUputnica.</value>
+  </data>
+  <data name="DischargeViewModel_CheckLeadingDoctorsWorkplaces_Error">
+    <value>Patients are not allowed to be discharged. Hospitalization has movement records without a registered leading doctor.</value>
+  </data>
+  <data name="DischargeViewModel_CheckDiagnosisInjuryWorkplaces_Error">
+    <value>In the context of hospital care and medical examination: Injury diagnosis may not be entered as a dismissal diagnosis.</value>
+  </data>
+</root>
