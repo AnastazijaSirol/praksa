@@ -1,17 +1,5 @@
 # Praksa
 
-DOBIVENE INFORMACIJE ZA APP: microsoft tehnologija, .net 4.8 framework, wpf, 10-20 labela?, resorce datoteke?
-
-17.2.
-
-MISLIN DA JE TO TO ČA SE TIČE APLIKACIJE! 
-
-- sada triba provuć njihov file kroz to
-
-- umjesto da se šalje tekst po tekst sada se šalje cijeli file na prijevod pa je brže
-
-OPIS:
-
 TranslateResources()
 
 - definiraju se putanje do 3 file-a: izvorni, prevedeni i još uvijek neprevedeni
