@@ -1,34 +1,3 @@
-
-# (Who is danas?????)
-'''from transformers import T5Tokenizer, T5ForConditionalGeneration
-
-tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-base")
-model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base")
-
-with open('input_text.txt', 'r') as file:
-    input_text = file.read()
-
-input_ids = tokenizer(input_text, return_tensors="pt").input_ids
-
-outputs = model.generate(input_ids)
-print(tokenizer.decode(outputs[0]))'''
-
-#OVO JE BOLJE, ALI DOSTA SPORO
-'''from transformers import M2M100ForConditionalGeneration, M2M100Tokenizer
-
-with open('input_text.txt', 'r') as file:
-    input_text = file.read()
-
-model = M2M100ForConditionalGeneration.from_pretrained("facebook/m2m100_1.2B")
-tokenizer = M2M100Tokenizer.from_pretrained("facebook/m2m100_1.2B")
-
-tokenizer.src_lang = "hr"
-encoded_en = tokenizer(input_text, return_tensors="pt")
-generated_tokens = model.generate(**encoded_en, forced_bos_token_id=tokenizer.get_lang_id("en"))
-translated = tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
-
-print(translated[0])'''
-
 from transformers import M2M100ForConditionalGeneration, M2M100Tokenizer
 
 def chunk_text(text):
