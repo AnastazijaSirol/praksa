@@ -1,5 +1,5 @@
 # Praksa
 
-Istraživanje LLM-ova za prevođenje i omogućavanje višejezičnosti u testnoj aplikaciji na način da se klikom na gumb mijenja jezik aplikacije između hrvatskog i engleskog
+Istraživanje dostupnih LLM-ova za potrebe prevođenja, razvoj testne aplikacije koja demonstrira primjenu odabranog LLM-a omogućavanjem višejezičnosti (HR-EN) te testiranje i evaluacija kvalitete prijevoda. 
 
 *korišteni model: facebook/m2m100_1.2B*
